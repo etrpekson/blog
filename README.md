@@ -3,7 +3,7 @@
 To run the app locally:
 
 1. Install nodejs and npm <a href="https://nodejs.org/en/">here</a>
-2. Create a new directory and open the command line there
+2. Create a new directory and open the command line in that directory
 3. Run the following commands in order:
 4. <b>git clone https://github.com/etrpekson/blog.git</b>
 5. <b>cd blog</b>
