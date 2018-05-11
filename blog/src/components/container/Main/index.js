@@ -2,13 +2,14 @@ import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import Typography from "material-ui/Typography";
 import { withStyles } from "material-ui/styles";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import ContentContainer from "../Content";
 import DashboardContainer from "../Dashboard";
 import MediaContainer from "../Media";
 import PostsContainer from "../Posts";
 import CommentsContainer from "../Comments";
+import Error404 from "../Error404";
 
 import Header from "../../reusable/Header";
 import Footer from "../../reusable/Footer";
@@ -39,7 +40,6 @@ class Container extends PureComponent {
 
   render() {
     const { classes, handleThemes } = this.props;
-
     return (
       <BrowserRouter>
         <div className={classes.root}>
@@ -52,14 +52,17 @@ class Container extends PureComponent {
           />
 
           <ContentContainer>
-            <Route exact={true} path="/" component={DashboardContainer} />
-            <Route exact={true} path="/posts" component={PostsContainer} />
-            <Route exact={true} path="/media" component={MediaContainer} />
-            <Route
-              exact={true}
-              path="/comments"
-              component={CommentsContainer}
-            />
+            <Switch>
+              <Route exact={true} path="/" component={DashboardContainer} />
+              <Route exact={true} path="/posts" component={PostsContainer} />
+              <Route exact={true} path="/media" component={MediaContainer} />
+              <Route
+                exact={true}
+                path="/comments"
+                component={CommentsContainer}
+              />
+              <Route path="*" component={Error404} />
+            </Switch>
           </ContentContainer>
 
           {/*Footer*/}
