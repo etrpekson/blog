@@ -4,7 +4,6 @@ import classnames from 'classnames';
 import { withStyles } from 'material-ui/styles';
 
 import Panel from '../ExpansionPanel';
-import BlogCard from '../BlogCard';
 
 import TopCommenters from './TopCommenters';
 import TopBlogPosts from './TopBlogPosts';

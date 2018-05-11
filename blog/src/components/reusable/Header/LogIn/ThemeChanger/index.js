@@ -33,7 +33,7 @@ class ThemeChanger extends PureComponent{
 
     render() {
         const { classes, className, handleThemes } = this.props;
-        const { auth, anchorEl, accountDialogOpen } = this.state;
+        const { anchorEl } = this.state;
         const open = Boolean(anchorEl);
 
         return(

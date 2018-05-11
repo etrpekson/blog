@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Typography from 'material-ui/Typography'
 import classnames from 'classnames';
 import { withStyles } from 'material-ui/styles';
 
@@ -23,7 +22,7 @@ const styles = theme => ({
 });
 
 function LoggedInDashboard(props){
-    const { classes, className, ...other } = props;
+    const { classes, className } = props;
     return(
         <div className={classnames(classes.root, className)}>
             <PageTitle title="Dashboard" />

@@ -1,27 +1,10 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
 import { withStyles } from 'material-ui/styles';
 import Typography from 'material-ui/Typography';
 import Modal from 'material-ui/Modal';
 import Button from 'material-ui/Button';
 import TextField from 'material-ui/TextField';
-import Grid from 'material-ui/Grid';
-
-function rand(){
-    return Math.round(Math.random() * 20) - 10;
-};
-
-function getModalStyle (){
-    const top = 50 + rand();
-    const left = 50 + rand();
-
-    return{
-        top: `${top}`,
-        left: `${left}`,
-        transform: `translate(-${top}%, -${left}%)`,
-    };
-};
 
 const styles = theme => ({    
     modalPaper: {

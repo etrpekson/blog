@@ -34,7 +34,7 @@ class App extends Component {
   };
 
   render() {
-    const { theme, currentTheme } = this.state;    
+    const { theme } = this.state;    
     
     const THEME = createMuiTheme(theme);
     return (

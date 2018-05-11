@@ -1,9 +1,7 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
 import { withStyles } from 'material-ui/styles';
 
-import posts from '../../../data/posts';
 import PostGrid from './PostGrid';
 
 const styles = theme => ({

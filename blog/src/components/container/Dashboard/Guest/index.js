@@ -30,7 +30,7 @@ const styles = theme => ({
 });
 
 function GuestDashboard(props){
-    const { classes, title } = props;
+    const { classes } = props;
 
     return(
         <div className={classnames(classes.root)}>

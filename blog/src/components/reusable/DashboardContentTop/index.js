@@ -1,7 +1,5 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import Typography from 'material-ui/Typography';
-import Button from 'material-ui/Button';
 import classnames from 'classnames';
 import { withStyles } from 'material-ui/styles';
 
@@ -33,7 +31,7 @@ class DashboardContentTop extends PureComponent{
     };
 
     render(){
-        const { classes, className, ...props } = this.props;
+        const { classes, className } = this.props;
 
         return(
             <div className={classnames(classes.root, className)}>

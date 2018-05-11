@@ -22,8 +22,7 @@ const styles = theme => ({
 });
 
 class DropdownMenu extends PureComponent{
-    state = {
-        auth: true,
+    state = {        
         anchorEl: null,
         accountDialogOpen: null,
     };
@@ -47,7 +46,7 @@ class DropdownMenu extends PureComponent{
 
     render(){
         const { classes, className, handleThemes } = this.props;
-        const { auth, anchorEl, accountDialogOpen, vertical, horizontal } = this.state;
+        const { anchorEl } = this.state;
         const open = Boolean(anchorEl);
         return(
             <div className={classnames(classes.root, className)}>

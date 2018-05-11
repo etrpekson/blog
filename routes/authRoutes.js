@@ -24,6 +24,7 @@ module.exports = (app) => {
             res.send(false);
         }
         else{
+            console.log(req.user.googleName);
             res.send(true);
         }
     })

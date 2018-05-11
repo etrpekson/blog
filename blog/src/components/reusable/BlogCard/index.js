@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import classnames from 'classnames';
-import Card, { CardHeader, CardMedia, CardContent, CardActions } from 'material-ui/Card';
+import Card, { CardMedia, CardContent, CardActions } from 'material-ui/Card';
 import Button from 'material-ui/Button';
 import Collapse from 'material-ui/transitions/Collapse';
 import IconButton from 'material-ui/IconButton';
@@ -55,10 +55,9 @@ class BlogCard extends PureComponent{
         
         let buttonLink = (<div></div>);
         let expandBtn = (<div></div>);
-        let body = (<div></div>);
-        let cardClass;
+        let body = (<div></div>);        
         
-        if(btnText != undefined && link != undefined){
+        if(btnText !== undefined && link !== undefined){
             buttonLink = (
                 <Link to={link} style={{textDecoration: 'none', color: 'white'}}>
                     <Button color="primary" className={classnames(classes.cardBtn, className)}>

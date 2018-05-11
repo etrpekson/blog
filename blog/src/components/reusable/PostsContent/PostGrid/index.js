@@ -1,14 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Typography from 'material-ui/Typography';
 import GridList, { GridListTile, GridListTileBar } from 'material-ui/GridList';
-import Subheader from 'material-ui/List/ListSubheader';
-import IconButton from 'material-ui/IconButton';
 import Button from 'material-ui/Button';
-import classnames from 'classnames';
 import { withStyles } from 'material-ui/styles';
-
-import posts from '../../../../data/posts';
 
 const styles = theme => ({
     postGrid: {

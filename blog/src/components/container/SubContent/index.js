@@ -18,7 +18,7 @@ const styles = theme => ({
 });
 
 function Subcontent(props){
-    const { classes, children, className, ...other } = props;
+    const { classes, children, className } = props;
 
     return(
         <div className={classnames(classes.root, className)}>

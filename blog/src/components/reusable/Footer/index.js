@@ -4,10 +4,7 @@ import classnames from 'classnames';
 //import BottomNavigation from 'material-ui/BottomNavigation';
 import { withStyles } from 'material-ui/styles';
 
-import BottomNavigation, { BottomNavigationAction } from 'material-ui/BottomNavigation';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import BottomNavigation from 'material-ui/BottomNavigation';
 
 const styles = theme => ({
     root: {

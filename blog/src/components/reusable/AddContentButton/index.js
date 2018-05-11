@@ -1,6 +1,5 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
-import Typography from 'material-ui/Typography';
 import classnames from 'classnames';
 import { withStyles } from 'material-ui/styles';
 import Button from 'material-ui/Button';

@@ -1,6 +1,5 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
-import Typography from 'material-ui/Typography'
 import classnames from 'classnames';
 import { withStyles } from 'material-ui/styles';
 
@@ -52,7 +51,7 @@ class LoggedInComments extends PureComponent{
     };
 
     render(){
-        const { classes, className, ...other } = this.props;
+        const { classes, className } = this.props;
         
         return(
             <div className={classnames(classes.root, className)}>

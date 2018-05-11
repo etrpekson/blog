@@ -5,7 +5,6 @@ import Popover from 'material-ui/Popover';
 import Divider from 'material-ui/Divider';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
-import classnames from 'classnames';
 import { withStyles } from 'material-ui/styles';
 
 const styles = theme => ({    
@@ -45,7 +44,7 @@ const styles = theme => ({
 });
 
 function AccountDialog(props){    
-    const { classes, handleClose, anchorEl, className } = props;
+    const { classes, handleClose, anchorEl } = props;
     return(
         <Popover                
             open={Boolean(anchorEl)}
@@ -83,8 +82,7 @@ function AccountDialog(props){
 AccountDialog.propTypes = {
     classes: PropTypes.object.isRequired,
     handleClose: PropTypes.func,
-    anchorEl: PropTypes.object,
-    className: PropTypes.string   
+    anchorEl: PropTypes.object,     
 };
 
 export default withStyles(styles, { name: 'AccountDialog', withTheme: true })(AccountDialog);

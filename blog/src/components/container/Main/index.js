@@ -1,9 +1,6 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import Typography from 'material-ui/Typography';
-import IconButton from 'material-ui/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import Tooltip from 'material-ui/Tooltip';
 import { withStyles } from 'material-ui/styles';
 import { BrowserRouter, Route } from 'react-router-dom';
 
@@ -14,8 +11,6 @@ import PostsContainer from '../Posts';
 import CommentsContainer from '../Comments';
 
 import Header from '../../reusable/Header';
-import DropdownMenu from '../../reusable/DropdownMenu';
-import Sidebar from '../../reusable/Sidebar';
 import Footer from '../../reusable/Footer';
 
 const styles = theme => {  
@@ -43,7 +38,7 @@ class Container extends PureComponent {
   };  
 
   render(){
-      const { classes, handleThemes, currentTheme } = this.props;
+      const { classes, handleThemes } = this.props;
       
       return(
         <BrowserRouter>

@@ -1,13 +1,9 @@
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
-import Typography from 'material-ui/Typography'
-import classnames from 'classnames';
 import { withStyles } from 'material-ui/styles';
 import { connect } from 'react-redux';
 
 import SubContent from '../SubContent';
 import LoggedInDashboard from './LoggedIn';
-import PageTitle from '../../reusable/PageTitle';
 import GuestDashboard from './Guest';
 
 class DashboardContainer extends PureComponent{

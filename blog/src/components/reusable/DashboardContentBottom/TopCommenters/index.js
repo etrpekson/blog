@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { withStyles } from 'material-ui/styles';
 import Table, { TableBody } from 'material-ui/Table';
-import Typography from 'material-ui/Typography';
 import Paper from 'material-ui/Paper';
 
 import Row from './TableRow';

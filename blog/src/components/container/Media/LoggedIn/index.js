@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
-import Typography from 'material-ui/Typography'
 import classnames from 'classnames';
 import { withStyles } from 'material-ui/styles';
 
 import PageHeader from '../../../reusable/PageHeader';
+import MediaContent from '../../../reusable/MediaContent';
+import images from '../../../../data/images';
 
 const styles = theme => ({
     root: {
@@ -20,13 +21,20 @@ const styles = theme => ({
     },
 });
 
-function LoggedInMedia(props){
-    const { classes, className, ...other } = props;
-    return(
-        <div className={classnames(classes.root, className)}>
-            <PageHeader title="Media" buttonLabel="Upload a new Image" contentToAdd="image"/>            
-        </div>
-    );
+class LoggedInMedia extends PureComponent{
+    state = {
+        imageList: images,        
+    };
+
+    render(){
+        const { classes, className } = this.props;
+        return(
+            <div className={classnames(classes.root, className)}>
+                <PageHeader title="Media" buttonLabel="Upload a new Image" contentToAdd="image"/>
+                <MediaContent imageList={this.state.imageList} />
+            </div>
+        );
+    }
 }
 
 LoggedInMedia.propTypes = {

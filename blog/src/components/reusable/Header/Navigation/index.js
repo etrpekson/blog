@@ -1,10 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import IconButton from 'material-ui/IconButton';
 import Typography from 'material-ui/Typography';
 import classnames from 'classnames';
-import MenuIcon from '@material-ui/icons/Menu';
-import Tooltip from 'material-ui/Tooltip';
 import { withStyles } from 'material-ui/styles';
 
 import Sidebar from '../../Sidebar';

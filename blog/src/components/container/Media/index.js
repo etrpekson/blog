@@ -1,7 +1,5 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import Typography from 'material-ui/Typography'
-import classnames from 'classnames';
 import { withStyles } from 'material-ui/styles';
 import { connect } from 'react-redux';
 
@@ -21,8 +19,7 @@ class MediaContainer extends PureComponent{
         }
     }
 
-    render(){
-        const { classes, className, ...other } = this.props;
+    render(){        
         return(
             <SubContent>
                 {this.renderContent()}

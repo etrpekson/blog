@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { withStyles } from 'material-ui/styles';
-import Grid from 'material-ui/Grid';
 
 import BlogCard from '../../BlogCard';
 
