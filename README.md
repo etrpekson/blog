@@ -14,3 +14,5 @@ To run the app locally:
 10. Navigate to localhost:3000/ on your browser.
 
 You may log-in using a dummy G-Mail account.
+
+Note: Make sure no other app is running on localhost:3000 and localhost:5000
